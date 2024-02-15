@@ -235,3 +235,46 @@ console.log(factorial(171));
 console.log(factorial(-2));
 console.log(factorial(1.5));
 console.log(factorial(-1.5));
+
+// 17. Crea una función que reciba un número como parámetro
+// y devuelva la serie de Fibonacci hasta el número dado.
+// Serie de Fibonacci (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...)
+
+const makeFibonacci = (limit) => {
+  const serie = [0, 1];
+  for (let i = 2; serie[i - 2] + serie[i - 1] < limit; i++) {
+    const next = serie[i - 2] + serie[i - 1];
+    serie.push(next);
+  }
+  return serie;
+};
+
+console.log(makeFibonacci(50));
+
+const makeFibonacci2 = (limit) => {
+  const serie = [0, 1];
+  let i = 2;
+
+  while (serie[i - 2] + serie[i - 1] < limit) {
+    const next = serie[i - 2] + serie[i - 1];
+    serie.push(next);
+    i++;
+  }
+
+  return serie;
+};
+
+console.log(makeFibonacci2(50));
+
+const makeFibonacci3 = (limit) => {
+  const serie = [0, 1];
+
+  while (serie[serie.length - 2] + serie[serie.length - 1] < limit) {
+    const next = serie[serie.length - 2] + serie[serie.length - 1];
+    serie.push(next);
+  }
+
+  return serie;
+};
+
+console.log(makeFibonacci3(50));
