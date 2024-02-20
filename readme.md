@@ -14,6 +14,7 @@ Documentación y código de la semana 0 del bootcamp de Desarrollo Web Full Stac
     - "editor.defaultFormatter": "esbenp.prettier-vscode",
     - "editor.codeActionsOnSave": {"source.fixAll.eslint": true}
   - Extensiones
+    - EditorConfig for VS Code
     - ESLint
     - Prettier
     - Live Server
