@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
-.no-show {
-  display: none;
+.form-control {
+  padding-block: 1rem;
+  gap: 1rem;
+  width: 80%;
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

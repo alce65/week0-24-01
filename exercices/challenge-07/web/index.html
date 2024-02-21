@@ -15,29 +15,52 @@
     <section>
       <p>Bienvenido a nuestro juego de cartas! ♥ ♦ ♣ ♠.</p>
       <form class="form1">
-        <input
-          type="text"
-          name="username"
-          placeholder="Inserta tu usuario!"
-          required
-        />
-        <button type="submit">Empezar</button>
+        <div class="form-control">
+          <input
+            type="text"
+            name="username"
+            placeholder="Inserta tu usuario!"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label>
+            Elige la baraja que quieres usar:
+            <select name="deck">
+              <option value="frenchDeck">Baraja francesa</option>
+              <option value="spanishDeck">Baraja española</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-control">
+          <button type="submit">Empezar</button>
+        </div>
       </form>
     </section>
     <section hidden>
       <p>
         Hola <span class="username">...</span>, bienvenido a nuestro juego de
-        cartas! ♥ ♦ ♣ ♠.
+        cartas!
       </p>
       <p>
         Estas son las reglas: se te asignara una carta y Tienes que adivinar si
         la siguiente es mayor o menor de la que tienes.
       </p>
-      <p>
-        Los valore desde el mas grande al mas pequeño van <br />
-        A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.
-      </p>
-      <p>♥ Corazones ♦ Diamantes ♣ Tréboles ♠ Espadas.</p>
+      <div class="deck french">
+        <p>
+          Los valore desde el mas grande al mas pequeño van <br />
+          A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.
+        </p>
+        <p>♥ Corazones ♦ Diamantes ♣ Tréboles ♠ Espadas.</p>
+      </div>
+      <div class="deck spanish" hidden>
+        <p>
+          Los valore desde el mas grande al mas pequeño van <br />
+          A, R, C, S, 7, 6, 5, 4, 3, 2.
+        </p>
+        <p>Oros - Copas - Espadas - Bastos.</p>
+      </div>
+
       <button class="button1">Iniciar Juego</button>
     </section>
     <section hidden>
@@ -58,8 +81,8 @@
       <p>¡Seguimos! <span class="username"></span></p>
       <p>Tu carta es: <span class="card">...</span></p>
       <p>¿La siguiente carta será mayor o menor?</p>
-      <button class="button-option-2">Mayor</button>
-      <button class="button-option-2">Menor</button>
+      <button class="button-option option-2">Mayor</button>
+      <button class="button-option option-2">Menor</button>
     </section>
     <section hidden>
       <p>¡Juego terminado! <span class="username"></span></p>
