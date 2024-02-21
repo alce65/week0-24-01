@@ -1,1 +1,3 @@
-console.log('Index.js loaded!');
+import { game } from './function.js';
+
+game();
