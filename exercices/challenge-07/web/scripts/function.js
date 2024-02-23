@@ -55,7 +55,9 @@ export const createMatch = () => {
     deck = event.target.elements[1].value;
     console.log(username);
     console.log(deck);
-    game(deck, username);
+    document.dispatchEvent(
+      new CustomEvent('gameReady', { detail: { username, deck } })
+    );
   };
 
   document.querySelector('.form1').addEventListener('submit', onSubmitForm1);
