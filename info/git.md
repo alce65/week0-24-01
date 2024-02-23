@@ -13,6 +13,20 @@ Alternativas a GitHub: GitLab, Bitbucket, SourceForge, entre otros
 - `git add`: Agrega un archivo al área de preparación (stagedArea)
 - `git status`: Muestra el estado de los archivos en el directorio de trabajo (workArea) y el área de preparación
 - `git commit`: Guarda los cambios en el repositorio
+- `git reset <>`: Restablece el estado de los archivos al commit indicado
+
+## Comandos de configuración de Git
+
+- `git config --global user.name "nombre_usuario"`
+- `git config --global user.email "correo_usuario"`
+- `git config --global core.editor "core --wait"`
+- `git config --global core.autocrlf false`
+- `git config init.defaultbranch main`
+- `git config --global -l`
+
+Cambiar nombre de la rama principal
+
+- `git branch -M main`
 
 ## Comandos de conexión  y uso del repositorio remoto
 
